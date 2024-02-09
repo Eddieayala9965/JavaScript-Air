@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
     <title>JS Air</title>
   </head>
   <body>
     <form id="lookup">
-      <legend>Look up flight</legend>
-      <label>
-        Airlines
-        <input type="search" name="Airlines" />
-      </label>
-      <label>
-        Flight Number
-        <input type="search" name="Num" />
-      </label>
-      <label>
-        Airport Departure
-        <input type="search" name="Departure" />
-      </label>
-      <label>
-        Airport Arrival
-        <input type="search" name="Airport" />
-      </label>
+      <fieldset>
+        <legend>Find Your Flight</legend>
+        <label>
+          Airlines
+          <input type="search" name="Airlines" />
+        </label>
+        <label>
+          Flight Number
+          <input type="search" name="Num" />
+        </label>
+        <label>
+          Airport Departure
+          <input type="search" name="Departure" />
+        </label>
+        <label>
+          Airport Arrival
+          <input type="search" name="Airport" />
+        </label>
+      </fieldset>
     </form>
     <div id="append" class=""></div>
     <script src="./js/main.js"></script>
