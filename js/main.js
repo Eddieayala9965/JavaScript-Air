@@ -1,7 +1,7 @@
 "use strict";
 
 const grabAirlineInfo = async () => {
-  const url = "./data/flight-logs.json";
+  const url = "./data/flight-logs-copy.json";
   const options = {
     method: "GET",
     headers: {
@@ -35,7 +35,7 @@ const createElement = (flightData) => {
       createAirlineInfo.innerHTML = `
           <li><span class="bold">Airline:</span> ${airline}</li>
           <li><span class="bold">Flight Num:</span> ${flight_number}</li>
-          <li><span class="bold">Airport</span> Departure: ${departure_airport} and <span>Arrival:</span> ${arrival_airport}</li>
+          <li><span class="bold">Airport Departure:</span>  ${departure_airport} and <span class="bold">Arrival:</span> ${arrival_airport}</li>
           <li><span class="bold">Depart Time:</span> ${departure_time} and <span class="bold">Arival Time:</span> ${arrival_time}</li>
           <li><span class="bold">Depart Date:</span> ${departure_date} and <span class="bold">Arival Date:</span> ${arrival_date}</li>
           <li><span class="bold">Passanger Count:</span> ${passenger_count}</li>
